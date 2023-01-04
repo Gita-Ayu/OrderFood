@@ -1,0 +1,16 @@
+[
+  {
+    "categoryId": 2,
+    "message": "Message for category id 2"
+  },
+
+  {
+    "categoryId": 5,
+    "message": "Message for category id 5"
+  },
+
+  {
+    "categoryId": 1,
+    "message": ""
+  }
+]

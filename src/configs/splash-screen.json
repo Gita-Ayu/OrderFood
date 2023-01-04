@@ -1,0 +1,13 @@
+[
+  {
+    "id": "jianghu",
+    "image": "/images/jianghu-hotpot.jpeg",
+    "duration": 3500
+  },
+  {
+    "id": "other_res_id",
+    "image": "select_an_image_in public/images folder",
+    "comment_duration": "the duration in ms",
+    "duration": 0
+  }
+]

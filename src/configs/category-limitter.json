@@ -1,0 +1,23 @@
+{
+  "__comment1__": "Select the days where the category limit should be enabled. For example, if the data only contains [1, 2] then the category limiter only available in Monday and Tuesday. Please use array of numbers, not string",
+  "__comment1_2__": "0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday",
+  "__comment1_3__": "If you want to disable this feature, just fill the value with [] (empty array) or null",
+  "shouldEnableCategoryLimitDays": [0, 1, 2, 3, 4, 5, 6],
+
+  "__comment2__": "In what time the categories will be limited. for example, if the start hour = 16 and start minutes = 0, then the category will be limited from 16.00 until the end hour-minute (next values).",
+  "__comment2_2__": "Please fill all of the values (the start hour-minutes and end hour-minutes). Otherwise in doesn't work.",
+  "__comment2_3__": "Please use an integer as the number, not float, not string.",
+  "__comment2_4__": "If you want to disable this feature, fill the startHour and the endHour with null",
+  "shouldEnableCategoryLimitStartHour": 16,
+  "shouldEnableCategoryLimitStartMinutes": 0,
+
+  "__comment3__": "In what time the categories will be limited. for example, if the end hour = 18 and end minutes = 12, then the category will be limited from the start hour-minutes (previous values) until 18.12.",
+  "__comment3_2__": "Please fill all of the values (the start hour-minutes and end hour-minutes). Otherwise in doesn't work.",
+  "__comment3_3__": "Please use an integer as the number, not float, not string.",
+  "__comment3_4__": "If you want to disable this feature, fill the startHour and the endHour with null",
+  "shouldEnableCategoryLimitEndHour":0,
+  "shouldEnableCategoryLimitEndMinutes": 0,
+
+  "__comment4__": "Select the category ids that you would like to remove. If you don't want to remove any category ids, just make it an empty array or null",
+  "shouldBeRemovedCategoryIds": [3]
+}

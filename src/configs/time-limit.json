@@ -1,0 +1,12 @@
+{
+  "__comment1__": "Update the time limit to set how long the customer could access the menu. For example if the time limit is 90, the customer only have 90 minutes to access the menu from a device.",
+  "timeLimit": 90,
+
+  "__comment2__": "Update the text to change the message on timer setup and timer end",
+  "messageTimerSetup": "You have 90 minutes to order from the menu! We will lock the menu if the time passed.",
+  "messageTimeup": "Time is up! You can't order more menu.",
+  "messageTimeupPassed": "Unfortunately, you reached the time limit. Please try to order again in your next visit",
+
+  "__comment3__": "The old time limit for each order will expired based on the value below (in minutes). For default case, I set it to 4 hours",
+  "orderTimeLimitExpiredIn": 99999999999
+}

@@ -1,0 +1,148 @@
+VERSION LOG:
+
+---------------------------------------------+
+	2022/12/02 - Dec 02 2022 : v 1.06.2  |
+---------------------------------------------+
+
+ Removed QR scan code and user name from the
+ final order confirmation page
+
+---------------------------------------------+
+	2022/12/02 - Dec 02 2022 : v 1.06.1  |
+---------------------------------------------+
+
+1. Changed the design card
+2. Changed the top horizantal scrolling menu design
+3. Added price in the item card
+4. Added category number
+
+---------------------------------------------+
+	2022/12/01 - Dec 01 2022 : v 1.06    |
+---------------------------------------------+
+
+1. Layout change
+2. Removed sidebar categories
+3. Added top scrolling categories menu
+4. Added two columns items list
+
+---------------------------------------------+
+	2022/10/09 - Oct 09 2022 : v 1.05.2  |
+---------------------------------------------+
+
+1. added table number in the final confirmed 
+   order page beside the name.
+2. removed default browser outline from the name
+   field from order confirm page
+3. removed the view order button from the final 
+   confirmed order page as it is not needed
+4. removed the view order button from 
+   confirm page as it is not needed.
+5. changed the label "add more items" to
+   "new order" in final order confirmed page.
+
+---------------------------------------------+
+	2022/10/03 - Oct 03 2022 : v 1.05.1  |
+---------------------------------------------+
+
+1. added the name input field in confirmation page
+2. added the name display in confirmed order page
+   under the irder number
+3. added the column for name in the orders database table
+4. updated the api to support the additional name field
+
+
+------------------------------------------+
+	2022/09/29 - Sep 29 2022 : v 1.05  |
+------------------------------------------+
+
+1. Added the new feature of QR scan of order number in the order confirmation page.
+2. Implemented the REACT-QR-CODE library.
+
+
+------------------------------------------+
+	2022/09/04 - Sep 4 2022 : v 1.04  |
+------------------------------------------+
+
+Aded the new feature to restrict sub-items selection according to defined database column 
+`categories`.`allow_more_quantity` value. Rest of the selection get grayed out after the 
+selection reach restricted number.
+
+------------------------------------------+
+	2022/08/31 - Aug 31 2022 : v 1.03 |
+------------------------------------------+
+
+1. Category mis-matched loading fixed.
+2. Added pre-selected sub-items of catgory according to the database "option:multiple".
+3. Adjusted the header, brought table and order number below the table. 
+
+------------------------------------------+
+	2022/08/29 - Aug 29 2022 : v 1.02 |
+------------------------------------------+
+
+1. Major facelift of the UI. 
+2. Category buttons loading lock.
+3. Loading spiner. 
+
+
+
+------------------------------------------+
+	2022/08/15 - Aug 15 2022 : v 1.01 |
+------------------------------------------+
+
+1. Change the update quantity selector modal
+2. Center the item list heading text 
+
+-----------------------------------------+
+	2022/08/08 - Aug 8 2022 : v 1.00 |
+-----------------------------------------+
+
+Changed UI theme from green to red.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

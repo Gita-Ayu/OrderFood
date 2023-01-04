@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ma+Shan+Zheng&display=swap"
+            rel="stylesheet"
+    />
+
+    <title>My App</title>
+    <script>
+        // alert('Dining time is 90 mins. \nWasting Food fined $5.00 per 100g. \nThe dumplings are fined @2.00 each. \nPlease take as much as you can eat, thank you.');
+    </script>
+</head>
+<body class="h-screen font-inter" style="">
+<div id="root" class="h-full">
+    <div class="flex flex-col h-screen">
+        <div class="flex place-items-center bg-green-400 justify-between mb-5 z-40">
+            <div class="cursor-pointer mx-2 pl-2 pr-2 pb-1">
+                <div class="text-center md:text-md text-xs p-2">Table No.
+                    <div class="font-bold">5</div>
+                </div>
+            </div>
+            <div class="font-maShanZheng md:text-2xl text-md pt-1 pb-2 text-center ">La Jiang Shan | 辣江山</div>
+            <div class="cursor-pointer mx-2 pl-2 pr-2 pb-1 pt-1 text-md">
+                <div class="text-center md:text-md text-xs">Order No.
+                    <div class="font-bold">-</div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-auto overflow-y-auto">
+            <div class="fixed flex justify-between bg-white w-full pl-5 pr-8 pt-3 pb-1 -my-6 shadow-lg z-20">
+                <div class="float-left">
+                    <div class="text-center text-sm items-center mb-2 pb-1 pt-1 pl-3 pr-3 md:mr-0 -mr-4 font-bold border-2 border-green-300 rounded-md ">
+                        Dine In
+                    </div>
+                </div>
+                <div class="float-right mt-2 flex">
+                    <div><span class="ant-badge"><span role="img" aria-label="shopping-cart"
+                                                       class="anticon anticon-shopping-cart"
+                                                       style="font-size: 24px; color: rgb(0, 0, 0);"><svg
+                            viewBox="0 0 1024 1024" focusable="false" data-icon="shopping-cart" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="true"><path
+                            d="M922.9 701.9H327.4l29.9-60.9 496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 00-26.6-12.5l-632-2.1-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 100 70.6h125.9L246 312.8l58.1 281.3-74.8 122.1a34.96 34.96 0 00-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 00-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 00-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 00-35.4-35.2zM305.7 253l575.8 1.9-56.4 315.8-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 01-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 01-31.6 31.6z"></path></svg></span><sup
+                            data-show="true" class="ant-scroll-number ant-badge-count" title="0">0</sup></span></div>
+                    <div>
+                        <div class=""><span role="img" aria-label="file-done"
+                                            class="anticon anticon-file-done ml-5 shadow-lg"
+                                            style="font-size: 20px; color: rgb(0, 0, 0);"><svg viewBox="64 64 896 896"
+                                                                                               focusable="false"
+                                                                                               data-icon="file-done"
+                                                                                               width="1em" height="1em"
+                                                                                               fill="currentColor"
+                                                                                               aria-hidden="true"><path
+                                d="M688 312v-48c0-4.4-3.6-8-8-8H296c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8zm-392 88c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H296zm376 116c-119.3 0-216 96.7-216 216s96.7 216 216 216 216-96.7 216-216-96.7-216-216-216zm107.5 323.5C750.8 868.2 712.6 884 672 884s-78.8-15.8-107.5-44.5C535.8 810.8 520 772.6 520 732s15.8-78.8 44.5-107.5C593.2 595.8 631.4 580 672 580s78.8 15.8 107.5 44.5C808.2 653.2 824 691.4 824 732s-15.8 78.8-44.5 107.5zM761 656h-44.3c-2.6 0-5 1.2-6.5 3.3l-63.5 87.8-23.1-31.9a7.92 7.92 0 00-6.5-3.3H573c-6.5 0-10.3 7.4-6.5 12.7l73.8 102.1c3.2 4.4 9.7 4.4 12.9 0l114.2-158c3.9-5.3.1-12.7-6.4-12.7zM440 852H208V148h560v344c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V108c0-17.7-14.3-32-32-32H168c-17.7 0-32 14.3-32 32v784c0 17.7 14.3 32 32 32h272c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="ant-layout ant-layout-has-sider z-1 mt-8 bg-white">
+                <aside class="ant-layout-sider ant-layout-sider-light overflow-auto h-full"
+                       style="display:block; max-width: 150px; min-width: 150px; width: 150px; position: fix; top:1px;">
+                    <div class="ant-layout-sider-children">
+                        <div>
+                            <div class="rounded-sm bg-green-300 shadow-sm font-bold  capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                (单锅)锅底Soup
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                (鸳鸯)锅底Soup
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                经典烤肉类
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                经典涮菜类
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                开胃小菜
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                主食
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                饮料Drinks
+                            </div>
+                            <div class="rounded-sm bg-green-100   capitalize w-full p-2 border-solid border-2 border-green-300 ">
+                                酒水Beers
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <section class="ant-layout flex flex-wrap break-words h-screen overflow-auto w-full">
+                    <main class="ant-layout-content">
+                        <div class="ml-3 mt-3 w-48 md:w-auto">
+                            <div class="">
+                                <div class="mb-3">
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/301.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        传统牛油锅Spicy beef butter soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/302.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        川味麻辣锅Spicy mala hot pot
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/303.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        秘制香辣锅Spicy homemade hotpot
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/304.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        美颜番茄锅Homemade tomato soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/305.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        白汤猪骨锅Pig trotters soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/306.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        野生菌汤锅Fresh mushroom soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/307.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full" style="object-fit:cover;">
+                                            </div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        泰式冬炎锅Tom yam soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/308.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full"
+                                                    style="object-fit:cover;"></div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        药材鸡汤锅Herbal chicken soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex md:flex-row flex-col border-green-300 border-solid border-2 mb-3 mr-3 w-full p-4 rounded-md">
+                                            <div class="justify-center w-full md:p-0  md:w-40 pb-2 items-center"><img
+                                                    src="http://ruby2.mdbizit.com/ljs/images/309.jpg" alt=""
+                                                    class="rounded-md object-fill h-20 w-full"
+                                                    style="object-fit:cover;"></div>
+                                            <div class="w-full md:pb-2 md:pl-2">
+                                                <div class="space-y-2 w-full">
+                                                    <div class="font-bold text-sm capitalize md:text-left text-center">
+                                                        酸辣金汤锅Sour and spicy soup
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+            </section>
+        </div>
+        <div class="text-center bg-green-300">
+            <div class="text-xs ml-2 pl-3 pr-3 pt-1 pb-1 sjustify-center">Welcome @ 2022</div>
+        </div>
+    </div>
+</div>
+<script>!function (e) {
+    function t(t) {
+        for (var n, l, i = t[0], f = t[1], a = t[2], p = 0, s = []; p < i.length; p++) l = i[p], Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), o[l] = 0;
+        for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]);
+        for (c && c(t); s.length;) s.shift()();
+        return u.push.apply(u, a || []), r()
+    }
+
+    function r() {
+        for (var e, t = 0; t < u.length; t++) {
+            for (var r = u[t], n = !0, i = 1; i < r.length; i++) {
+                var f = r[i];
+                0 !== o[f] && (n = !1)
+            }
+            n && (u.splice(t--, 1), e = l(l.s = r[0]))
+        }
+        return e
+    }
+
+    var n = {}, o = {1: 0}, u = [];
+
+    function l(t) {
+        if (n[t]) return n[t].exports;
+        var r = n[t] = {i: t, l: !1, exports: {}};
+        return e[t].call(r.exports, r, r.exports, l), r.l = !0, r.exports
+    }
+
+    l.m = e, l.c = n, l.d = function (e, t, r) {
+        l.o(e, t) || Object.defineProperty(e, t, {enumerable: !0, get: r})
+    }, l.r = function (e) {
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {value: "Module"}), Object.defineProperty(e, "__esModule", {value: !0})
+    }, l.t = function (e, t) {
+        if (1 & t && (e = l(e)), 8 & t) return e;
+        if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+        var r = Object.create(null);
+        if (l.r(r), Object.defineProperty(r, "default", {
+            enumerable: !0,
+            value: e
+        }), 2 & t && "string" != typeof e) for (var n in e) l.d(r, n, function (t) {
+            return e[t]
+        }.bind(null, n));
+        return r
+    }, l.n = function (e) {
+        var t = e && e.__esModule ? function () {
+            return e.default
+        } : function () {
+            return e
+        };
+        return l.d(t, "a", t), t
+    }, l.o = function (e, t) {
+        return Object.prototype.hasOwnProperty.call(e, t)
+    }, l.p = "/ljs/";
+    var i = this.webpackJsonpclient = this.webpackJsonpclient || [], f = i.push.bind(i);
+    i.push = t, i = i.slice();
+    for (var a = 0; a < i.length; a++) t(i[a]);
+    var c = f;
+    r()
+}([])</script>
+<script src="/ljs/static/js/2.02b4d937.chunk.js"></script>
+<script src="/ljs/static/js/main.6c9ab933.chunk.js"></script>
+<div>
+    <div class="ant-message">
+        <div></div>
+    </div>
+</div>
+<div>
+    <div class="ant-modal-root">
+        <div tabindex="-1" class="ant-modal-wrap ant-modal-centered" role="dialog" aria-labelledby="rcDialogTitle0"
+             style="display: none;">
+            <div role="document" class="ant-modal" style="width: 290px; transform-origin: 271px 508.5px;">
+                <div tabindex="0" aria-hidden="true"
+                     style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                <div class="ant-modal-content">
+                    <button type="button" aria-label="Close" class="ant-modal-close"><span
+                            class="ant-modal-close-x"><span role="img" aria-label="close"
+                                                            class="anticon anticon-close ant-modal-close-icon"><svg
+                            viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em"
+                            fill="currentColor" aria-hidden="true"><path
+                            d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg></span></span>
+                    </button>
+                    <div class="ant-modal-header">
+                        <div class="ant-modal-title" id="rcDialogTitle0">Order</div>
+                    </div>
+                    <div class="ant-modal-body">
+                        <div class="ant-spin-nested-loading">
+                            <div class="ant-spin-container">
+                                <div class="">
+                                    <div class=" h-1/2 mx-auto flex justify-center rounded-lg "><img
+                                            src="http://ruby2.mdbizit.com/ljs/images/308.jpg" alt="" class="rounded-md">
+                                    </div>
+                                    <div class=" md:mt-0 mt-4">
+                                        <div class="mt-2 uppercase tracking-wide text-lg text-indigo-500 font-semibold ">
+                                            药材鸡汤锅Herbal chicken soup
+                                        </div>
+                                        <div class="mt-2 text-gray-500 font-bold text-sm">(单锅)锅底Soup</div>
+                                        <div class="mt-2 pb-2 text-sm"></div>
+                                        <div class="text-md">$2.80</div>
+                                        <div>
+                                            <div></div>
+                                            <div class="flex justify-center mt-2">
+                                                <div class="flex items-center w-auto">
+                                                    <button type="button"
+                                                            class="bg-blue-500  text-md text-white font-bold py-1 px-3 m-2 rounded">
+                                                        -
+                                                    </button>
+                                                    <input type="number" min="1"
+                                                           class="text-center w-full border-2 font-semibold text-lg hover:text-black focus:text-black text-gray-700 outline-none rounded"
+                                                           name="quantity" readonly="" value="1">
+                                                    <button type="button"
+                                                            class="bg-blue-500 text-md text-white font-bold py-1 px-3 m-2 rounded">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-modal-footer">
+                        <button type="button" class="ant-btn" ant-click-animating-without-extra-node="true">
+                            <span>Cancel</span></button>
+                        <button type="button" class="ant-btn ant-btn-primary"><span>Add to Cart</span></button>
+                    </div>
+                </div>
+                <div tabindex="0" aria-hidden="true"
+                     style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    [ant-click-animating-without-extra-node='true']::after, .ant-click-animating-node {
+        --antd-wave-shadow-color: rgb(216, 216, 217);
+    }</style>
+</body>
+</html>

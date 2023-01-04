@@ -1,0 +1,12 @@
+[
+  {
+    "restaurantId": "jianghu",
+    "orderTimeLimit": 0,
+    "timeLimit": 0
+  },
+  {
+    "restaurantId": "other_restaurant_id",
+    "orderTimeLimit": 70,
+    "timeLimit": 90
+  }
+]
